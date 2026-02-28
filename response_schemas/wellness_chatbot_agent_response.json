@@ -1,0 +1,22 @@
+{
+  "agent_name": "Wellness Chatbot Agent",
+  "agent_id": "69a28026ad98307a3fb2793b",
+  "description": "24/7 empathetic AI companion for emotional support and wellness guidance.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "message": "string",
+    "emotional_tone": "string",
+    "distress_detected": "boolean",
+    "suggestion": "string",
+    "suggested_action": "string"
+  },
+  "example_response": {
+    "message": "Empathetic response message",
+    "emotional_tone": "Detected tone: positive, neutral, concerned, distressed, or crisis",
+    "distress_detected": false,
+    "suggestion": "Optional suggestion for exercise or professional help",
+    "suggested_action": "Suggested action type: none, breathing_exercise, book_session, or sos"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "agent_name": "Mood Analysis Agent",
+  "agent_id": "69a28026ad98307a3fb27939",
+  "description": "Analyzes user's mood questionnaire responses, determines emotional state, generates emoji-based results and personalized suggestions.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "mood": "string",
+    "emoji": "string",
+    "score": "number",
+    "summary": "string",
+    "suggestions": [
+      {
+        "title": "string",
+        "description": "string",
+        "type": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "mood": "Primary mood: Happy, Calm, Stressed, Anxious, Low, Sad, or Overwhelmed",
+    "emoji": "Emoji representing the mood",
+    "score": 0,
+    "summary": "Brief empathetic mood summary (2-3 sentences)",
+    "suggestions": [
+      {
+        "title": "Suggestion title",
+        "description": "Suggestion description",
+        "type": "Type: exercise, tip, or consultation"
+      }
+    ]
+  }
+}

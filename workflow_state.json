@@ -1,0 +1,52 @@
+{
+  "project": "MindEase - AI-Powered Mental Wellness Platform",
+  "agents": [
+    {
+      "name": "Mood Analysis Agent",
+      "agent_id": "69a28026ad98307a3fb27939",
+      "node_id": "mood_agent",
+      "model": "gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.4,
+      "top_p": 0.95,
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false
+      },
+      "response_schema_file": "response_schemas/mood_analysis_agent_response.json"
+    },
+    {
+      "name": "Wellness Chatbot Agent",
+      "agent_id": "69a28026ad98307a3fb2793b",
+      "node_id": "chatbot_agent",
+      "model": "gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false
+      },
+      "response_schema_file": "response_schemas/wellness_chatbot_agent_response.json"
+    },
+    {
+      "name": "Booking Assistant Agent",
+      "agent_id": "69a280267feec6663e53da98",
+      "node_id": "booking_agent",
+      "model": "gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "capabilities": {
+        "image_output": false,
+        "voice": false,
+        "file_output": false
+      },
+      "response_schema_file": "response_schemas/booking_assistant_agent_response.json"
+    }
+  ],
+  "rag_ids": [],
+  "schedules": []
+}

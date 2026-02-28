@@ -1,0 +1,50 @@
+{
+  "name": "MindEase - AI-Powered Mental Wellness Platform",
+  "description": "A mental wellness platform with mood analysis, empathetic chatbot support, and psychologist booking assistance.",
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Input",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "mood_agent",
+      "type": "Agent",
+      "label": "Mood Analysis Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a28026ad98307a3fb27939",
+      "model": "gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.4,
+      "top_p": 0.95
+    },
+    {
+      "id": "chatbot_agent",
+      "type": "Agent",
+      "label": "Wellness Chatbot Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a28026ad98307a3fb2793b",
+      "model": "gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.6,
+      "top_p": 0.95
+    },
+    {
+      "id": "booking_agent",
+      "type": "Agent",
+      "label": "Booking Assistant Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a280267feec6663e53da98",
+      "model": "gemini-2.5-pro",
+      "provider": "google",
+      "temperature": 0.3,
+      "top_p": 0.9
+    }
+  ],
+  "edges": [
+    { "source": "input_node", "target": "mood_agent" },
+    { "source": "input_node", "target": "chatbot_agent" },
+    { "source": "input_node", "target": "booking_agent" }
+  ]
+}

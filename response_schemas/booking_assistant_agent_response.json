@@ -1,0 +1,20 @@
+{
+  "agent_name": "Booking Assistant Agent",
+  "agent_id": "69a280267feec6663e53da98",
+  "description": "Helps users find suitable psychologists and guides the booking process.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "message": "string",
+    "recommended_session_type": "string",
+    "recommended_specialization": "string",
+    "action_suggestion": "string"
+  },
+  "example_response": {
+    "message": "Helpful response message about booking",
+    "recommended_session_type": "Recommended session type if applicable: video, audio, chat, anonymous, or none",
+    "recommended_specialization": "Recommended specialization if applicable",
+    "action_suggestion": "Suggested next action: browse_psychologists, book_session, ask_more, or none"
+  }
+}
